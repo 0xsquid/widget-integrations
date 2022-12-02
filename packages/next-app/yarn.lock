@@ -12,10 +12,10 @@
     ethers "^5.7.1"
     release-it "^15.5.0"
 
-"@0xsquid/widget@^1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@0xsquid/widget/-/widget-1.2.5.tgz#5bc559221122d96977fbac9a3df62bc052173a17"
-  integrity sha512-Yo7iBnoC+cpZPVrtzlp6qIEboBXnAirNw2ORVM8Cx/wfV3yseNKwBQ8c9gK31qtkxE0DZ0pXELsTEOHGGAJIXQ==
+"@0xsquid/widget@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@0xsquid/widget/-/widget-1.2.8.tgz#8ff540157c50a25c12f934243a26ae545546a3fd"
+  integrity sha512-bKsUFsIk+bO7MKzcAUQTRhhUwhzQaYVvf44kAFzdH32m6CzalNQWKVMP4BhR1r7AZzbr9BoTdSVZlvuzVafPGA==
   dependencies:
     "@0xsquid/sdk" "^1.1.0"
     "@cosmjs/stargate" "^0.29.2"
