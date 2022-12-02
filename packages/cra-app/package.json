@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@0xsquid/widget": "^1.2.0",
+    "@0xsquid/widget": "^1.2.5",
+    "@lifi/widget": "^1.26.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
