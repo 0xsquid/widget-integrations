@@ -1,5 +1,5 @@
-import { SquidWidget } from "@0xsquid/widget/src";
-import type { AppConfig } from "@0xsquid/widget/src/widget/core/types/config";
+import { SquidWidget } from "@0xsquid/widget";
+import { AppConfig } from "@0xsquid/widget/widget/core/types/config";
 
 import styles from "../styles/Home.module.css";
 
