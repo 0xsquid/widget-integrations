@@ -9,6 +9,18 @@ export default function Home() {
     slippage: 3,
     instantExec: true,
     infiniteApproval: false,
+
+    titles: {
+      // Every title in the widget, if string is empty, the title will be invisible
+      swap: "",
+      settings: "Settings",
+      wallets: "Wallets",
+      tokens: "Tokens",
+      chains: "Chains",
+      history: "History",
+      transaction: "Transaction",
+      destination: "Destination address",
+    },
     apiUrl: "https://dev.api.0xsquid.com",
   } as AppConfig;
 
