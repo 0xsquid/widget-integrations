@@ -10,7 +10,7 @@ export const WidgetPage = () => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{padding: "2rem", width: "auto", height: "auto"}}>
       <SquidWidget config={
         {companyName: "Squid",
         slippage: 1,
