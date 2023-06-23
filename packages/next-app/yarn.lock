@@ -1465,7 +1465,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@release-it/conventional-changelog@github:release-it/conventional-changelog":
+"@release-it/conventional-changelog@release-it/conventional-changelog":
   version "5.1.1"
   resolved "https://codeload.github.com/release-it/conventional-changelog/tar.gz/ff9f1aae654dc378d5ed4703a2802ef9591e1a96"
   dependencies:
@@ -6798,15 +6798,14 @@ new-github-release-url@2.0.0:
   dependencies:
     type-fest "^2.5.1"
 
-next-transpile-modules@^9.0.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/next-transpile-modules/-/next-transpile-modules-9.1.0.tgz#dffd2563bf76f8afdb28f0611948f46252ca65ef"
-  integrity sha512-yzJji65xDqcIqjvx5vPJcs1M+MYQTzLM1pXH/qf8Q88ohx+bwVGDc1AeV+HKr1NwvMCNTpwVPSFI7cA5WdyeWA==
+next-transpile-modules@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/next-transpile-modules/-/next-transpile-modules-10.0.0.tgz#7152880048835acb64d05fc7aa34910cbe7994da"
+  integrity sha512-FyeJ++Lm2Fq31gbThiRCrJlYpIY9QaI7A3TjuhQLzOix8ChQrvn5ny4MhfIthS5cy6+uK1AhDRvxVdW17y3Xdw==
   dependencies:
     enhanced-resolve "^5.10.0"
-    escalade "^3.1.1"
 
-next@^12.2.1:
+next@^12.2.0:
   version "12.3.4"
   resolved "https://registry.yarnpkg.com/next/-/next-12.3.4.tgz#f2780a6ebbf367e071ce67e24bd8a6e05de2fcb1"
   integrity sha512-VcyMJUtLZBGzLKo3oMxrEF0stxh8HwuW976pAzlHhI3t8qJ4SROjCrSh1T24bhrbjw55wfZXAbXPGwPt5FLRfQ==
