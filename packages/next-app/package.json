@@ -9,14 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@0xsquid/widget": "1.4.51",
+    "@0xsquid/widget": "1.5.5",
+    "@defiedge/react": "^0.0.4",
+    "@next/bundle-analyzer": "^13.4.7",
+    "@pancakeswap/sdk": "^5.0.0",
+    "@pancakeswap/uikit": "^0.64.0",
+    "@sentry/nextjs": "^7.56.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
-    "next": "13.0.5",
-    "next-transpile-modules": "^10.0.0",
+    "next": "^12.2.1",
+    "next-transpile-modules": "^9.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"

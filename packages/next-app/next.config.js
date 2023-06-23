@@ -1,12 +1,24 @@
-const withTM = require('next-transpile-modules')(["@0xsquid/widget"]);
+/* eslint-disable @typescript-eslint/no-var-requires */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+const withTM = require('next-transpile-modules')(['@pancakeswap/uikit', '@pancakeswap/sdk', '@defiedge/react',  '@0xsquid/widget'])
+
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const config = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  compiler: {
+    styledComponents: true,
+  },
+  experimental: {
+    scrollRestoration: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: true,
 }
 
-
-// Please declare withTM as your last plugin (the outermost one)
-module.exports = withTM(nextConfig)
-
+module.exports = withBundleAnalyzer(withTM(config))
