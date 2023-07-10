@@ -14,6 +14,7 @@ function App() {
       <SquidWidget config={
         {companyName: "Squid",
         slippage: 1,
+        integratorId: "example-swap-widget",
         infiniteApproval: false,
         instantExec: false,
         apiUrl: "https://api.0xsquid.com",
