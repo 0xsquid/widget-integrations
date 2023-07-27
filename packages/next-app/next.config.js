@@ -1,4 +1,4 @@
-const withTM = require('next-transpile-modules')(["@0xsquid/widget"]);
+const withTM = require('next-transpile-modules')(["@0xsquid/widget", "@0xsquid/staking-widget"]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
