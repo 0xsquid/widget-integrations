@@ -26,14 +26,25 @@ export default function Home() {
   const erc20Interface = new ethers.utils.Interface(erc20Abi);
 
   const stakeConfig: StakeConfig = {
+    // This method will be used to compute the exchange rate between the staked token and the token to stake
+    // Basically a multiplier from 0 to x
+    // Then if the amount that the route gets is 100, and the exchange rate is 0.5, we'll show 50 as the amount to be received for stakedToken
+    // If nothing is specified, the exchange rate will be 1
+    stakedTokenExchangeRateGetter: async () => {
+      await new Promise((res) => setTimeout(res, 5000));
+      return 1;
+    },
+
     // This link will be used to redirect the user to the unstake page, because it's not possible yet with the widget
-    unstakeLink: "https://app.pinjamlabs.com/staking",
+    unstakeLink: "https://app.pinjamlabs.com/manage",
+
     // Here are the calls that will be called by Squid MultiCall contract after the cross chain swap is done
     customContractCalls: [
       {
         callType: SquidCallType.FULL_TOKEN_BALANCE, // Full token balance means that the MultiCall will stake all token balance it received from the swap
         target: axlUsdcKavaAddress, // Contract address
         value: "0",
+
         // CallData is a method instead of a static value because it could depend on the route
         callData: () => {
           return erc20Interface.encodeFunctionData("approve", [
@@ -51,6 +62,7 @@ export default function Home() {
         callType: SquidCallType.FULL_TOKEN_BALANCE,
         target: pinjamAxlUsdcPoolAddress,
         value: "0",
+
         // CallData is a method instead of a static value because it could depend on the route
         // Here we can see that we use the user address as a parameter (destinationAddress)
         // It's needed as a callback because you can't know upfront what the user address will be
@@ -68,6 +80,7 @@ export default function Home() {
               true,
             ]);
           }
+
           // If the user address is not available, we return a dummy value
           // The funds won't be sent there, but it's needed to avoid having errors when fetching data when the user is not connected
           // For example getting a quote for a staking mechanism
@@ -93,12 +106,14 @@ export default function Home() {
         "https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389",
       coingeckoId: "usd-coin",
     },
+
     // Won't be seen by the user, but is needed for the config
     // This is the token that will be swapped TO
     tokenToStake: {
       chainId: kavaId,
       address: axlUsdcKavaAddress,
     },
+
     // The intro page is optional, but it's a good way to explain to the user what he's going to do
     // It will be displayed as the first page of the widget if it's defined
     introPage: {

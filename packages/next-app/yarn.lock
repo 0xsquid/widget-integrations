@@ -12,10 +12,10 @@
     ethers "^5.7.1"
     release-it "^15.5.0"
 
-"@0xsquid/staking-widget@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@0xsquid/staking-widget/-/staking-widget-1.0.3.tgz#cb0e578b35734b716bedd3c16301200d3c0b63bc"
-  integrity sha512-kYssk8PyByXyTHi1VZDqiDUnPEfceeg1K01YXTMLTkc2/MSuCYWhNXVTdSB7cR7CHnKpABPRZVr8mrpjYrtHoQ==
+"@0xsquid/staking-widget@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@0xsquid/staking-widget/-/staking-widget-1.0.4.tgz#d3877b80f92ad959f0e698a803bb971ec11bea9e"
+  integrity sha512-Hi6dtlSJcALd4glqe2VpqHUHsG5VAyE4zcpjdhxHlE61B9d6QfiU/8FTCBFynMN9plCao3dDx5bGCtYgl6F0Lg==
   dependencies:
     "@0xsquid/sdk" "1.7.0"
     "@cosmjs/stargate" "^0.29.2"
@@ -1151,7 +1151,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@release-it/conventional-changelog@github:release-it/conventional-changelog":
+"@release-it/conventional-changelog@release-it/conventional-changelog":
   version "7.0.0"
   resolved "https://codeload.github.com/release-it/conventional-changelog/tar.gz/7c90551bf556c479e1a40b79609b1f500fb8bee6"
   dependencies:
