@@ -3,11 +3,19 @@
 
 ## Install the widget
 
-To install the widget you need to have an npm token. To obtain it, please contact us on our [Discord](https://discord.com/invite/XxCpfZQ7tg).
-Then create a `.npmrc` file at the root of your repository and provide the token in it
+To install the widget you'll need to have an `integratorId`.  
+To get one, please fill the form here: [Typeform](https://l19g3aali76.typeform.com/integrator-id)  
+This integratorId will help us for on-chain analytics.  
+Later, you'll be able to access a dashboard to see your tx volume going through this widget.
 
-```
-//registry.npmjs.org/:_authToken=
+Once you have your integratorId, you can use it directly in the widget's config object:
+
+
+```js
+<SquidWidget config={ 
+    // ...
+    integratorId: "your-integrator-id"
+} />
 ```
 
 ## Transpile module
@@ -53,6 +61,7 @@ Example
 <SquidWidget config={ 
     companyName:"Squid",
     slippage:3,
+    integratorId: "your-integrator-id"
     // customization config
 } />
 ```
