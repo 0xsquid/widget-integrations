@@ -10,7 +10,7 @@ export default function Home() {
     slippage: 3,
     instantExec: true,
     infiniteApproval: false,
-    apiUrl: "https://dev.api.0xsquid.com",
+    apiUrl: "https://v2.api.squidrouter.com",
   } as AppConfig;
 
   return (
