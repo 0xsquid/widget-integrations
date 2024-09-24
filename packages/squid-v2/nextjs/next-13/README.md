@@ -18,7 +18,7 @@ yarn dev
 
 ## Set up your integrator id
 
-Go to `src/pages/index.tsx` and update the integrator id.
+Go to `src/pages/index.tsx` and add your integrator id to the widget config:
 
 ```diff
 <SquidWidget
