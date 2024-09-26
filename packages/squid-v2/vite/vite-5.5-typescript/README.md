@@ -7,7 +7,7 @@
 git clone https://github.com/0xsquid/widget-integrations.git
 
 # Move to the right folder
-cd packages/squid-v2/vite/vite-5.5-typescript-swc
+cd packages/squid-v2/vite/vite-5.5-typescript
 
 # Install dependencies
 yarn install
@@ -31,7 +31,7 @@ Finally, add the plugin to your `vite.config.ts` file:
 
 ```diff
 import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react-swc"
+import react from "@vitejs/plugin-react"
 +import { nodePolyfills } from "vite-plugin-node-polyfills"
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -44,7 +44,7 @@ export default defineConfig({
 
 ### Set up your integrator id
 
-Go to `src/pages/index.tsx` and add your integrator id to the widget config:
+Go to `src/App.tsx` and add your integrator id to the widget config:
 
 ```diff
 <SquidWidget

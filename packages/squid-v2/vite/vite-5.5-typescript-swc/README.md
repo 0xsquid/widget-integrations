@@ -80,7 +80,7 @@ export default App
 
 ### Set up your integrator id
 
-Go to `src/pages/index.tsx` and add your integrator id to the widget config:
+Go to `src/App.tsx` and add your integrator id to the widget config:
 
 ```diff
 <SquidWidget
