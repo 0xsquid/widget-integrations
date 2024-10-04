@@ -1,4 +1,4 @@
-# Squid V2 Widget + Vite + Typescript SWC
+# Squid V2 Widget + Vite + Typescript
 
 ## Getting started
 
