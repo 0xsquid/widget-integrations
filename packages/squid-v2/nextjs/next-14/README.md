@@ -19,7 +19,7 @@ const nextConfig = {
 
 ### Client components
 
-The Squid widget interacts with multiple client-side APIs. For this reason, it can only be rendered as a client component.
+The Squid widget interacts with multiple client-side APIs. For this reason, it needs to be rendered as a client component.
 
 NextJS 14 renders all components on the server by default. To render the Squid widget as a client component, create a new file and add the `"use client"` directive to the top of the file:
 
