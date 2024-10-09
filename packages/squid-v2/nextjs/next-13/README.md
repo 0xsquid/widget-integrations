@@ -1,4 +1,21 @@
-# Squid V2 Widget + NextJS 13
+# Squid V3 Widget + NextJS 13
+
+## NextJS 13 integration
+
+Below are the steps required to integrate the Squid widget with NextJS 13.
+For more information, refer to the [NextJS integration guide](https://docs.squidrouter.com/widget-integration/add-a-widget/widget/nextjs-installation) in our docs.
+
+### Transpile packages
+
+Using the widget with NextJS requires transpiling the `@0xsquid/widget` and `@0xsquid/react-hooks` packages.
+
+Add the following to your `next.config.mjs` file:
+
+```diff
+const nextConfig = {
++  transpilePackages: ["@0xsquid/widget", "@0xsquid/react-hooks"]
+}
+```
 
 ## Getting started
 
