@@ -14,6 +14,12 @@ Add the following to your `next.config.mjs` file:
 ```diff
 const nextConfig = {
 +  transpilePackages: ["@0xsquid/widget", "@0xsquid/react-hooks"]
++  swcMinify: false, // disable swc minify
++  webpack(config) {
++    config.externals.push("pino-pretty")
++
++    return config
++  }
 }
 ```
 
