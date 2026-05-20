@@ -7,7 +7,11 @@ Please reference our docs at [https://docs.squidrouter.com/widget](https://docs.
 ## Examples
 ```
 - packages/
-    - NextJS
-    - CRA (Create react app)
-    - Iframe
+    - squid-v2/          # Swap widget (@0xsquid/widget)
+        - vite
+        - nextjs
+        - cra (Create react app)
+    - deposit-widget/    # Deposit widget (@0xsquid/deposit-widget)
+        - vite
+        - nextjs
 ```
