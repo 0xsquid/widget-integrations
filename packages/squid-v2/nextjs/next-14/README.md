@@ -1,5 +1,13 @@
 # Squid V3 Widget + NextJS 14
 
+## Requirements
+
+- Node.js 22.12 or later
+- React 18
+- Next.js 14.2
+
+This stack is supported by the next major version of `@0xsquid/widget`.
+
 ## NextJS 14 integration
 
 Below are the steps required to integrate the Squid widget with NextJS 14.

@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+> **Legacy:** This example uses an old widget config shape. It is not maintained for the next major version of `@0xsquid/widget`. See [packages/squid-v2](../squid-v2) for current examples.
 
 ## Install the widget
 

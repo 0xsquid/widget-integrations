@@ -1,5 +1,7 @@
 # Squid V3 Widget + NextJS 13
 
+> **Note:** This example targets `@0xsquid/widget` v3 only. It does not build with the next major version. Use [next-14](../next-14) instead.
+
 ## NextJS 13 integration
 
 Below are the steps required to integrate the Squid widget with NextJS 13.

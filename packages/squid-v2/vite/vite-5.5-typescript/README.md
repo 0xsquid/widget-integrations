@@ -1,5 +1,13 @@
 # Squid V3 Widget + Vite + Typescript
 
+## Requirements
+
+- Node.js 22.12 or later
+- React 18
+- Vite 5 with `@vitejs/plugin-react`
+
+This stack is supported by the next major version of `@0xsquid/widget`.
+
 ## Getting started
 
 ```bash

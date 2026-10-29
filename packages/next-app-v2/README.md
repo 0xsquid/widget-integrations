@@ -1,3 +1,5 @@
+> **Legacy:** This example uses an old widget config shape. It is not maintained for the next major version of `@0xsquid/widget`. See [packages/squid-v2](../squid-v2) for current examples.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
