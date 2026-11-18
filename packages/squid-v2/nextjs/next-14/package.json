@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@0xsquid/widget": "3.0.10",
+    "@0xsquid/widget": "8.0.0",
     "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18"
