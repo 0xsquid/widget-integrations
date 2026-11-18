@@ -10,8 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@0xsquid/squid-types": "0.1.100",
-    "@0xsquid/widget": "^3.0.5",
+    "@0xsquid/widget": "8.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

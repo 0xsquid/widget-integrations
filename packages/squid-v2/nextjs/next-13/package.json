@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "NODE_OPTIONS=--no-experimental-global-navigator next dev",
+    "build": "NODE_OPTIONS=--no-experimental-global-navigator next build",
+    "start": "NODE_OPTIONS=--no-experimental-global-navigator next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@0xsquid/squid-types": "0.1.100",
-    "@0xsquid/widget": "^3.0.5",
+    "@0xsquid/widget": "6.4.0",
     "next": "13.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"

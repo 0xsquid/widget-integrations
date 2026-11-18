@@ -70,7 +70,7 @@ export default function Home() {
 
       <SquidWidget
         config={{
-          integratorId: "squid-swap-widget"
+          integratorId: "<your-integrator-id>"
         }}
       />
     </main>
